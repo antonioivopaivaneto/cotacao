@@ -10,37 +10,64 @@
 
     
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 bg-red-400">
+
+
       <div @mouseover="limpeza = limpezaB" @mouseleave="limpeza = limpezaA" class="hover:bg-white hover:text-gray-700 font-bold cursor-pointer mx-2 relative text-center z-30 p-2.5 text-2xl text-white border-white border-2 bg-opacity-50 rounded-xl">
+        <router-link :to="{name: 'contato', params:{titulo:'Limpeza'}}">
+
         <img :src="limpeza"  class="w-9 sm:w-24 mx-auto" alt="">
         <h3 class="text-sm sm:text-lg ">Limpeza </h3>
+      </router-link>
+        
     </div>
     <div @mouseover="porteiro = porteiroB" @mouseleave="porteiro = porteiroA"  class="hover:bg-white hover:text-gray-700 font-bold cursor-pointer mx-2 relative text-center z-30 p-2.5 text-2xl text-white border-white border-2 bg-opacity-50 rounded-xl">
+      <router-link :to="{name: 'contato', params:{titulo:'Zeladoria'}}">
       <img :src="porteiro"  class="w-9 sm:w-24 mx-auto" alt="">
       <h3 class="text-sm sm:text-lg ">Zeladoria </h3>
+      </router-link>
     </div>
     <div @mouseover="acesso = acessoB" @mouseleave="acesso = acessoA" class="hover:bg-white hover:text-gray-700 font-bold cursor-pointer mx-2 relative text-center z-30 p-2.5 text-2xl text-white border-white border-2 bg-opacity-50 rounded-xl">
+      <router-link :to="{name: 'contato', params:{titulo:'Controle de Acesso'}}">
+
       <img :src="acesso"  class="w-9 sm:w-24 mx-auto" alt="">
       <h3 class="text-sm sm:text-lg ">Controle de Acesso </h3>
+      </router-link>
+
     </div>
     <div @mouseover="jardin = jardinB" @mouseleave="jardin = jardinA" class="hover:bg-white hover:text-gray-700 font-bold cursor-pointer mx-2 relative text-center z-30 p-2.5 text-2xl text-white border-white border-2 bg-opacity-50 rounded-xl">
+      <router-link :to="{name: 'contato', params:{titulo:'Jardinagem'}}">
+
       <img :src="jardin"  class="w-9 sm:w-24 mx-auto" alt="">
       <h3 class="text-sm sm:text-lg ">Jardinagem </h3>
+      </router-link>
     </div>
     <div @mouseover="manu = manuA" @mouseleave="manu = manuB" class="hover:bg-white hover:text-gray-700 font-bold cursor-pointer mx-2 relative text-center z-30 p-2.5 text-2xl text-white border-white border-2 bg-opacity-50 rounded-xl">
+      <router-link :to="{name: 'contato', params:{titulo:'Manutencista'}}">
+
       <img :src="manu"  class="w-9 sm:w-24 mx-auto" alt="">
       <h3 class="text-sm sm:text-lg ">Manutencista</h3>
+      </router-link>
     </div>
     <div @mouseover="cope = copeA" @mouseleave="cope = copeB" class="hover:bg-white hover:text-gray-700 font-bold cursor-pointer mx-2 relative text-center z-30 p-2.5 text-2xl text-white border-white border-2 bg-opacity-50 rounded-xl">
+      <router-link :to="{name: 'contato', params:{titulo:'Copeira'}}">
+
       <img :src="cope"  class="w-9 sm:w-24 mx-auto" alt="">
       <h3 class="text-sm sm:text-lg ">Copeira</h3>
+      </router-link>
     </div>
     <div @mouseover="recep = recepA" @mouseleave="recep = recepB" class="hover:bg-white hover:text-gray-700 font-bold cursor-pointer mx-2 relative text-center z-30 p-2.5 text-2xl text-white border-white border-2 bg-opacity-50 rounded-xl">
+      <router-link :to="{name: 'contato', params:{titulo:'Atendimento e Recepção'}}">
+
       <img :src="recep"  class="w-9 sm:w-24 mx-auto" alt="">
       <h3 class="text-sm sm:text-lg ">Atendimento e Recepção</h3>
+      </router-link>
     </div>
     <div @mouseover="custo = custoA" @mouseleave="custo = custoB" class="hover:bg-white hover:text-gray-700 font-bold cursor-pointer mx-2 relative text-center z-30 p-2.5  text-2xl text-white border-white border-2 bg-opacity-50 rounded-xl">
+      <router-link :to="{name: 'contato', params:{titulo:'Outros Serviços'}}">
+
       <img :src="custo"  class="w-9 sm:w-24 mx-auto" alt="">
       <h3 class="text-sm sm:text-lg ">Outros</h3>
+      </router-link>
     </div>
     </div>
   </div>
