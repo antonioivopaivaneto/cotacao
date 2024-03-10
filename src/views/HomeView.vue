@@ -117,6 +117,7 @@ import custoA from "./../assets/icones/customizar (1).png"
 import custoB from "./../assets/icones/customizar.png"
 
 import { ref } from "vue"
+import router from "@/router"
 
 
 const limpeza = ref(limpezaA)
@@ -127,6 +128,7 @@ const manu = ref(manuB)
 const cope = ref(copeB)
 const recep = ref(recepB)
 const custo = ref(custoB)
+
 
 </script>
 
